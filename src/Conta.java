@@ -1,34 +1,19 @@
 
-public class Conta {
+public class Conta extends Pessoafj{
 	protected String numero;
-	protected String cliente;
 	protected double saldo;
 
-	public Conta() {
-	}
-
-	public Conta(String numero, String cliente) {
+	public Conta(String nome, String cpf, String sobrenome, String numero, double saldo) {
+		super(nome, sobrenome, cpf);
 		this.numero = numero;
-		this.cliente = cliente;
-	}
-
-	public Conta(String numero, String cliente, double saldo) {
-		this(numero, cliente);
 		this.saldo = saldo;
+
 	}
 
-	private String mostra() {
-		String saida = "--------------";
-		saida += "\nCliente: " + this.cliente;
-		saida += "\nNumero: " + this.numero;
-		saida = saida + "\nSaldo :" + this.saldo;
-		saida += "\n-------------";
-		return saida;
-	}
-	
-	@Override
-	public String toString() {
-		return "\n"+ mostra();
+	public Conta(String numero, String razaoSocial, String nome, int cnpj, double saldo) {
+		super(nome, cnpj, razaoSocial);
+		this.numero = numero;
+		this.saldo = saldo;
 	}
 
 	public void creditar(double valor) {
@@ -43,22 +28,12 @@ public class Conta {
 		}
 	}
 
-	public Conta clone() {
-		Conta cloneObj = new Conta(numero, cliente);
-		cloneObj.creditar(saldo);
-		return cloneObj;
-	}
-
 	public double getSaldo() {
 		return this.saldo;
 	}
 
 	public String getCliente() {
-		return this.cliente;
-	}
-
-	public void setCliente(String cliente) {
-		this.cliente = cliente;
+		return super.toString();
 	}
 
 }
