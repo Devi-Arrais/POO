@@ -1,0 +1,20 @@
+1
+a) Encapsulamento: É a técnica utilizada para esconder uma ideia, ou seja
+não expôr detalhes internos para o usuário, tornando partes do sistema privado do usuário.
+No processo de encapsulamento os atributos das classes são do tipo private. 
+Para acessar esses tipos de modificadores, é necessário criar métodos set e get.
+
+b) Herança: É quando uma classe filha herda atributos e métodos de uma classe pai. 
+Métodos e atributos só podem estar com visibilidade public e protected para que sejam herdados.
+
+c) Polimorfismo: Definimos Polimorfismo como um princípio a partir do qual as classes derivadas de 
+uma única classe base são capazes de invocar os métodos que, embora apresentem a mesma assinatura, 
+comportam-se de maneira diferente para cada uma das classes derivadas.
+
+d) Atributos e Métodos: Atributos são as características de um objeto, essas características também são 
+conhecidas como variáveis. Métodos são as ações que os objetos podem exercer quando solicitados, onde podem 
+interagir e se comunicarem com outros objetos.
+
+e) Atributos e Métodos Estáticos: Atributos estáticos de uma class são compartilhados por todas as intancias dessa
+classe e se o valor de um atributo estático for modificado por uma das instâncias, a modificação será refletida em todas
+as instâncias da mesma classe. Métodos estáticos são manipulação de variáveis declarada como estática.
